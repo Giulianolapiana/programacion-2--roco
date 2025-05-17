@@ -1,0 +1,378 @@
+
+/* nueva parte */
+.navbar {
+    padding: 0;
+    font-size: 18px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding-right: 10px;
+    /* para que tenga mayusculas */
+    text-transform: capitalize;
+}
+
+.navbar a {
+    color: rgb(27, 27, 26) !important;
+    /* es para cuando nos posicionemos cambie de color */
+    /* es para cuando nos posicionemos cambie de color */
+}
+
+.navbar a:hover {
+    color: #196875 !important;
+}
+
+h1 {
+    color: #328796;
+    text-align: center;
+    font-size: 65px;
+    font-family: Arial, sans-serif;
+}
+
+h2 {
+    color: rgba(36, 6, 117, 0.945);
+    background-color: rgba(87, 86, 86, 0.979);
+    text-align: center;
+    font-size: 35px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-transform: capitalize;
+}
+
+/* jumbotron */
+.jumbotron {
+    height: 45px;
+}
+
+.jumbotron h2 {
+    background-image: linear-gradient(gray, rgba(255, 255, 255, 0.658) 70%, gray);
+}
+/*  */
+
+h3 {
+    text-align: center;
+    color: black;
+    font-size: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-transform: capitalize;
+}
+
+
+/* nosotros */
+
+h5 {
+    font-size: 10px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background-image: linear-gradient(white,grey);  
+    background-color: gray;
+    min-height: 110px;
+    height: auto;
+}
+
+.full-width-section {
+    padding: 20px;
+    background-color: #57616ba9;
+    border-radius: 5px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* formulario */
+form {
+    margin: 30px;
+    padding-left: 20%;
+    padding-right: 20%;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    text-align: center;
+}
+
+form input,
+form textarea {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    border: 2px solid #196875;
+    border-radius: 5px;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.btnform {
+    background-color: rgba(87, 86, 86, 0.979);
+    color: black;
+    font-weight: bold;
+}
+
+
+/* le estamos poniendo de fondo la imagen y centandola */
+main {
+    min-height: calc(100vh - 110px);
+    height: auto;
+    width: 100%;
+    background-color: gray;
+    background-image: url(pixabay/portada4.jpg);
+    background-size: cover;
+    padding: 5%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/* Home */
+.home .col-md-5,
+.home .col-md-11 {
+    background-color: rgba(128, 128, 128, 0.842);
+    border-radius: 5px;
+    border: solid 2px #196875;
+}
+
+main p {
+    color: beige;
+    text-align: center;
+    padding: 10px;
+}
+
+main h2 {
+    padding: 8px;
+    background-color: rgba(128, 128, 128, 0.178);
+    color: black;
+    -webkit-text-decoration: underline #196875;
+    text-decoration: underline #196875;
+}
+
+.fondo {
+    height: 100vh;
+    width: 100%;
+    background-color: gray;
+    background-size: cover;
+    padding: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/*  */
+/* fondo que se adapta al largo */
+.fondoautomatico {
+    height: auto;
+    background-color: gray;
+    background-size: cover;
+    padding: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#fondogrande {
+    width: 95%;
+}
+
+/* footer */
+footer {
+    background-image: linear-gradient(grey,  rgb(61, 59, 59) 90%);
+    /* background-color: black; */
+    width: 100%;
+    color: blanchedalmond;
+    font-size: 20px;
+    padding: 10px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-transform: capitalize;
+}
+
+.alinearhorizontalmente {
+    /* use el flex ya que no pude ponerlos en linea */
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.celulares {
+    text-align: center;
+}
+
+footer p {
+    letter-spacing: 2px;
+}
+
+.redes a {
+    text-decoration: none;
+    color: blanchedalmond;
+    font-size: 25px;
+    letter-spacing: 15px;
+}
+
+.redes a :hover {
+    color: rgba(36, 6, 117, 0.877);
+}
+
+/* es para el desplsamiento suave */
+/* flecha para que suba el documento */
+html {
+    scroll-behavior: smooth;
+}
+
+.subir {
+    background-color: #196975bd;
+    color: blanchedalmond;
+    height: 40px;
+    width: 40px;
+    position: fixed;
+    right: 40px;
+    bottom: 40px;
+    font-size: 25px;
+    text-align: center;
+    line-height: 40px;
+    /* es para redondear el boton */
+    border-radius: 50%;
+    /* box shadow para dar sombra */
+}
+
+.subir:hover {
+    color: black;
+}
+
+/* turno */
+#reservaForm {
+    label {
+        margin-top: 10px;
+    }
+    
+    input,
+    select,
+    button {
+    display: block;
+    width: 75%;
+    margin: auto;
+    padding: 10px;
+    border: 1px solid #303030;
+    border-radius: 5px;
+    margin-bottom: 8px;
+    }
+    button {
+        background-color: #00039bc9;
+        color: rgb(0, 0, 0);
+        font-weight: bold;
+        cursor: pointer;
+    }
+    
+    button:hover {
+        background-color: #0003b442;
+    }
+    
+    #mensaje {
+        text-align: center;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .sucursales iframe {
+        width: 80%;
+        height: 350px;
+    }
+
+    .carousel-item img {
+        height: 300px;
+    }
+
+    .carousel-item h3 {
+        color: rgba(240, 248, 255, 0.822);
+    }
+
+    form {
+        margin: 0px;
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+}
+
+@media only screen and (min-width: 600px) and (max-width: 768px) {
+    .carousel-item h3 {
+        color: rgba(240, 248, 255, 0.822);
+    }
+
+    .carousel-item img {
+        height: 450px;
+    }
+
+    form {
+        margin: 30px;
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1099px) {
+    .sucursales iframe {
+        height: 400px;
+    }
+
+    .carousel-item h3 {
+        color: rgba(240, 248, 255, 0.822);
+    }
+
+    .carousel-item img {
+        height: 300px;
+    }
+
+    form {
+        margin: 30px;
+        padding-left: 15%;
+        padding-right: 15%;
+    }
+}
+
+@media only screen and (min-width: 1100px) {
+    .sucursales iframe {
+        height: 450px;
+    }
+
+    .carousel-item img {
+        height: 400px;
+    }
+
+    .carousel-item h3 {
+        color: rgba(240, 248, 255, 0.822);
+    }
+}
+
+/* recomendaciones */
+/* cuadro de texto */
+.call {
+    width: 350px;
+    text-align: center;
+    border: 5px solid orangered;
+    border-radius: 5px;
+    padding: 15px;
+    background-color: rgba(87, 86, 86, 0.979);
+}
+
+.call p {
+    padding: 10px;
+}
+
+#espacio {
+    padding-top: 30px;
+    background-color: grey;
+}
+
+.masinfo a {
+    position: relative;
+    left: 40%;
+}
+
+.masinfo a:hover {
+    transition: 1.2s;
+    color: orangered;
+    background-color: beige;
+    font-size: 20px;
+}
+
+.masinfo a:nth-child(1) {
+    height: 1px;
+    left: -100%;
+}
+
+/*# sourceMappingURL=detalles.css.map */
