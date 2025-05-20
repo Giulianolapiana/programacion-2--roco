@@ -1,0 +1,27 @@
+version: "3.9"
+
+services:
+    web:
+        build: .
+        container_name: php_web
+        volumes:
+            - ./src:/var/www/html
+            - ./docker/vhost.conf:/etc/apache2/sites-enabled/000-default.conf
+        ports:
+            - "8080:80"
+        depends_on:
+            - db
+
+    db:
+        image: mysql:5.7
+        container_name: mysql_db
+        restart: always
+        environment:
+            MYSQL_DATABASE: reservas
+            MYSQL_USER: user
+            MYSQL_PASSWORD: password
+            MYSQL_ROOT_PASSWORD: rootpass
+        ports:
+            - "3307:3306"
+        volumes:
+            - ./db:/docker-entrypoint-initdb.d

@@ -1,8 +1,12 @@
 <?php
-$host = 'localhost';
+$host = 'db:3306';
+$db   = 'reservas';
+$user = 'user';
+$pass = 'password';
+/* $host = 'localhost';
 $db = 'reservas';
 $user = 'root';
-$pass = '';
+$pass = ''; */
 
 try {
     $conn = new PDO("mysql:host=$host;dbname=$db;charset=utf8", $user, $pass);

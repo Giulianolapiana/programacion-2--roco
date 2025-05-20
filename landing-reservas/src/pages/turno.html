@@ -7,7 +7,7 @@
     <!-- BS 5.1 inicia -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <!-- BS 5.1 fin -->
-    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="../stylee.css">
     <title>Turnos</title>
 </head>
 <body>
@@ -47,7 +47,7 @@
     <!-- inicio de container  -->
     <div class="fondo">
         <h3>Elegí una fecha y hora disponible para agendar tu cita.</h3>
-        <form id="reservaForm">
+        <form id="reservaFormulario" method="POST" action="../reservar.php">
             <label for="nombre">Nombre:</label>
             <input type="text" name="nombre" id="nombre" required>
 
@@ -56,16 +56,23 @@
 
             <label for="fecha">Fecha:</label>
             <input type="date" name="fecha" id="fecha" required>
+            <!-- <label for="hora">Hora:</label>
+            <input type="time" id="hora" name="hora" required> -->
 
             <label for="hora">Hora:</label>
             <select name="hora" id="hora" required>
                 <option value="">Seleccioná una fecha primero</option>
             </select>
-
             <button type="submit">Reservar</button>
+            <!-- <form method="POST" action="URL_AQUI">
+                <button type="submit">Reservar</button>
+            </form> -->
         </form>
 
         <p id="mensaje"></p>
+        <h4 class="mt-4">Tus reservas</h4>
+        <ul id="listaReservas" class="list-group"></ul>
+
     </div>
     <!-- fin de container  -->
     <!-- <div class="fondo"> 

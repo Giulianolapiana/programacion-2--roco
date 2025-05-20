@@ -20,7 +20,7 @@
 }
 
 h1 {
-    color: #328796;
+    color: #963232;
     text-align: center;
     font-size: 65px;
     font-family: Arial, sans-serif;
@@ -183,7 +183,7 @@ footer {
 }
 
 .alinearhorizontalmente {
-    /* use el flex ya que no pude ponerlos en linea */
+    /* use el flex ya que no pude ponerlos en linea rese*/
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -235,7 +235,7 @@ html {
 }
 
 /* turno */
-#reservaForm {
+#reservaFormulario {
     label {
         margin-top: 10px;
     }
