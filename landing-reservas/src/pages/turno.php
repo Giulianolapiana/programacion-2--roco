@@ -1,3 +1,4 @@
+<?php include '../verificar.php'; ?>
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -22,7 +23,7 @@
             <div class="collapse navbar-collapse " id="collapsibleNavbar">
             <ul class="navbar-nav">
                 <li class="nav-item rounded shadow p-1">
-                <a class="nav-link" href="../index.html">home</a>
+                <a class="nav-link" href="../index.php">home</a>
                 </li>
                 <li class="nav-item rounded shadow p-1">
                 <a class="nav-link" href="./nosotros.html">nosotros</a>
