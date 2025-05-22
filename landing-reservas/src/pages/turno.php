@@ -18,23 +18,23 @@
         <div class="container-fluid">
             <a class="navbar-brand " ></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
-            <span class="navbar-toggler-icon"></span>
+                <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse " id="collapsibleNavbar">
-            <ul class="navbar-nav">
-                <li class="nav-item rounded shadow p-1">
-                <a class="nav-link" href="../index.php">home</a>
-                </li>
-                <li class="nav-item rounded shadow p-1">
-                <a class="nav-link" href="./nosotros.html">nosotros</a>
-                </li>
-                <li class="nav-item rounded shadow p-1">
-                <a class="nav-link" href="#">Turnos</a>
-                </li>
-                <li class="nav-item rounded shadow p-1">
-                <a class="nav-link" href="./contacto.html">contacto</a>
-                </li>
-            </ul>
+                <ul class="navbar-nav">
+                    <li class="nav-item rounded shadow p-1">
+                        <a class="nav-link" href="../index.php">home</a>
+                    </li>
+                    <li class="nav-item rounded shadow p-1">
+                        <a class="nav-link" href="./nosotros.html">nosotros</a>
+                    </li>
+                    <li class="nav-item rounded shadow p-1">
+                        <a class="nav-link" href="#">Turnos</a>
+                    </li>
+                    <li class="nav-item rounded shadow p-1">
+                        <a class="nav-link" href="./contacto.html">contacto</a>
+                    </li>
+                </ul>
             </div>
         </div>
         </nav>
@@ -46,7 +46,7 @@
     <!-- jumbotron fin -->
     </header>
     <!-- inicio de container  -->
-    <div class="fondo">
+    <div class="fondoautomatico">
         <h3>Elegí una fecha y hora disponible para agendar tu cita.</h3>
         <form id="reservaFormulario" method="POST" action="../reservar.php">
             <label for="nombre">Nombre:</label>
@@ -62,12 +62,10 @@
 
             <label for="hora">Hora:</label>
             <select name="hora" id="hora" required>
+                <p id="sinHorarios" style="color: red; display: none; margin-top: 10px;">No hay horarios disponibles para esta fecha.</p>
                 <option value="">Seleccioná una fecha primero</option>
             </select>
             <button type="submit">Reservar</button>
-            <!-- <form method="POST" action="URL_AQUI">
-                <button type="submit">Reservar</button>
-            </form> -->
         </form>
 
         <p id="mensaje"></p>
@@ -76,21 +74,7 @@
 
     </div>
     <!-- fin de container  -->
-    <!-- <div class="fondo"> 
-        <form>
-            <label for="nombre">Nombre</label>
-            <input type="text" id="nombre">
 
-            <label for="apellido">Apellido</label>
-            <input type="text" id="apellido">
-
-            <label for="mensaje">Mensaje</label>
-            <textarea name="" id="" cols="30" rows="5" placeholder="Escribe tu mensaje"></textarea>
-            
-            <input class="btnform" type="submit">
-            <input class="btnform" type="reset">
-        </form>
-    </div> -->
     <!--  -->
     <footer>
         <div class="container-fluid">

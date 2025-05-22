@@ -55,21 +55,21 @@ $usuario = $_SESSION['usuario'] ?? null;
 
     <main>
         <div class="home">
+            <?php if ($usuario): ?>
+                <div class="alert alert-success text-center mt-3">
+                    Bienvenido, <?= htmlspecialchars($usuario) ?> 😊
+                </div>
+            <?php endif; ?>
             <div class="row g-4 justify-content-around">
                 <div class="col-md-5">
                 <h2>¿Quiénes somos?</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit, quam neque excepturi quae dolor laudantium at numquam fugiat expedita rerum labore...</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit, quam neque excepturi quae dolor laudantium at numquam fugiat expedita rerum labore...  Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis quo suscipit quae harum cumque eum ipsa dolor, at totam distinctio odio officiis asperiores quasi impedit, maxime omnis corrupti beatae sequi.</p>
                 </div>
                 <div class="col-md-5">
                 <h2>Bienvenidos</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut ab illum facilis voluptatum asperiores amet, hic nihil fugiat, aliquid suscipit...</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut ab illum facilis voluptatum asperiores amet, hic nihil fugiat, aliquid suscipit...Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis quo suscipit quae harum cumque eum ipsa dolor, at totam distinctio odio officiis asperiores quasi impedit, maxime omnis corrupti beatae sequi.</p>
                 </div>
             </div>
-            <?php if ($usuario): ?>
-            <div class="alert alert-success text-center mt-3">
-                Bienvenido, <?= htmlspecialchars($usuario) ?> 😊
-            </div>
-            <?php endif; ?>
         </div>
     </main>
 
