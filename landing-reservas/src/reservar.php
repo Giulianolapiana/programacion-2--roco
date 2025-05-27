@@ -1,6 +1,8 @@
 <?php
+define('APP_RUNNING', true); 
+require_once 'db.php';
+
 session_start();
-include 'db.php';
 
 if (!isset($_SESSION['usuario'])) {
     echo "Debes iniciar sesión para reservar.";

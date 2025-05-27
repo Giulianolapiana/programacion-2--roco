@@ -1,4 +1,7 @@
 <?php
+if (!defined('APP_RUNNING')) {
+    die('Acceso denegado');
+}
 $host = 'db:3306';
 $db   = 'reservas';
 $user = 'user';
