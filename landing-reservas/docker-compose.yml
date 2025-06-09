@@ -3,6 +3,8 @@ version: "3.9"
 services:
     web:
         build: .
+        env_file:
+            - .env  # 👈 Cargar variables de entorno aquí
         container_name: php_web
         volumes:
             - ./src:/var/www/html
@@ -17,10 +19,10 @@ services:
         container_name: mysql_db
         restart: always
         environment:
+            MYSQL_ROOT_PASSWORD: rootpass
             MYSQL_DATABASE: reservas
             MYSQL_USER: user
             MYSQL_PASSWORD: password
-            MYSQL_ROOT_PASSWORD: rootpass
         ports:
             - "3307:3306"
         volumes:
